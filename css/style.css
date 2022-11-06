@@ -54,6 +54,7 @@ section h2 {
   font-size: 50px;
 }
 
+/* == Navigation ==*/
 #mainNav {
     border-color: rgba(34, 34, 34, 0.05);
     background-color: #fffaeb;
@@ -63,10 +64,22 @@ section h2 {
     letter-spacing: 1px;
 }
 
+#mainNav .navbar-brand {
+    color:#bb3535;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+    color: #bb3535;
+  }
+  
+
 #mainNav .navbar-toggler {
     font-size: 12px;
     padding: 8px 10px;
-    color: #222222;
+    color: #bb3535;
   }
 
 #mainNav .navbar-nav > li > a {
@@ -86,13 +99,100 @@ section h2 {
   color: #bb3535;
 }
 
+/* Hero section ============= */
+
+header.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: #bb3535;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #a4a59b 100%), url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  header.masthead .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  header.masthead .header-content h1 {
+    font-size: 45px;
+  }
+
+  header.masthead .hero-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  header.masthead .hero-container img {
+    border-radius: 500px;
+  }
+
+  /* Work section ============= */
+
+section.work {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  section.work .work-item {
+    max-width: 18rem;
+  }
+  
+  section.work .work-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
+
+  .bg-dark {
+    background-color: #a4a59b !important;
+  }
+
+  /*=== Skills===*/
+  .skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #45536c;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: #f2f3f5;
+}
+
 /* === Contact ===*/
 .contact-section {
     padding-top: 5rem;
   }
   .contact-section .card {
     border: 0;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #45505b;
   }
   .contact-section .card h4 {
     font-size: 0.8rem;
@@ -102,7 +202,7 @@ section h2 {
   }
   
   .contact-section .card hr {
-    border-color: #64a19d;
+    border-color: #45505b;
     border-width: 0.25rem;
     width: 3rem;
   }
@@ -128,15 +228,60 @@ section h2 {
     color: #fff;
   }
 
+  .bg-maroon {
+    background-color: #bb3535 !important;
+  }
+
 /* === Footer === */
 footer {
     padding: 25px 0;
     text-align: center;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 250, 235, 1);
     background-color: #45505b;
   }
   
   footer p {
     font-size: 12px;
     margin: 0;
+  }
+
+  /* === Button == */
+
+  .btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+  }
+  
+  .btn-outline {
+    color: #fffaeb;
+    border: 1px solid;
+    border-color: #bb3535;
+  }
+  
+  .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+    color: white;
+    border-color: #bb3535;
+    background-color: #bb3535;
+  }
+  
+  .btn {
+    border-radius: 300px;
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .work .btn {
+    border-radius: 10px;
+    padding: .65rem;
+    
+  }
+
+  .text-dark {
+    color: #45536c !important;
   }
