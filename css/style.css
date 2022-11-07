@@ -129,6 +129,7 @@ header.masthead {
   }
 
   header.masthead .hero-container img {
+    border: solid #bb3535;
     border-radius: 500px;
   }
 
