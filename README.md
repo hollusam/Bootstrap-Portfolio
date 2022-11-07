@@ -2,7 +2,7 @@
 
 ## Description
 
-This portfolio page was created to showcase my skills and talents. The aim is to highlight my strongest work as well as the thought process behind it.
+This portfolio page is an updated version of portfolio recreated with bootstrap. It was created to showcase my skills and talents. The aim is to highlight my strongest work as well as the thought process behind it.
 
 ## Installation
 
@@ -10,14 +10,14 @@ N/A
 
 ## Usage
 
-Use this portfolio page to view my works and also get in touch with me.
+Use this portfolio page to view my works, know about my skills and also get in touch with me.
 
 ## Screenshot
 
-![screenshot](/images/sreenshots.png)
+![screenshot](/images/Screenshot%20desktop.jpg)
 
 
-![mobile screenshot](/images/mobile%20screenshot.png)
+![mobile screenshot](/images/screenshot%20mobile.jpg)
 
 
 ## Contact
@@ -36,7 +36,11 @@ Project link: https://hollusam.github.io/portfolio-challenge/
 
 ## Credits
 
-N/A
+Philip Howley (My Instructor)
+
+Nic Catania
+
+All the TAs of Triology Bootcamp
 
 ## License
 
