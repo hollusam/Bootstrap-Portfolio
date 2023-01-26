@@ -41,7 +41,7 @@ h6 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -135,18 +135,51 @@ header.masthead {
 
   /* Work section ============= */
 
+  .work .work-grid .work-item figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 3rem;
+    /* color: #ffffff; */
+    z-index: 1 !important;
+  }
+  
 section.work {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
   
-  section.work .work-item {
-    max-width: 18rem;
+.work .work-grid .work-item {
+    /* max-width: 400px; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
   }
   
-  section.work .work-item img {
-    max-width: 12rem;
+  .work .work-item img.work-thumb {
+    transform: scale(1);
+    transition: 0.25s ease-in-out;
     box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
+
+  .work .work-grid .overlay {
+    background-color: #fffaeb;
+  }
+
+  .work .work-grid .overlay,
+  .work .work-grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.45s ease-in-out;
+  }
+
+  .work .work-item:hover .overlay,
+  .work .work-item:hover figcaption {
+    opacity: 1;
   }
 
   .bg-dark {
@@ -259,7 +292,7 @@ footer {
   }
   
   .btn-outline {
-    color: #fffaeb;
+    color: #bb3535;
     border: 1px solid;
     border-color: #bb3535;
   }
@@ -279,8 +312,8 @@ footer {
   
   .work .btn {
     border-radius: 10px;
-    padding: .65rem;
-    
+    padding: .35rem .25rem;
+    font-size: 10px;
   }
 
   .text-dark {
